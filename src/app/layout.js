@@ -18,6 +18,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <link
+        rel="icon"
+        href="https://www.pinterest.com/pin/484770347411826475/"
+      />
+      <title>Default Title</title>
       <body className={poppins.className} suppressHydrationWarning>
         <div className="flex">
           <aside className="fixed top-0 left-0 w-64 h-screen z-50 bg-white shadow">

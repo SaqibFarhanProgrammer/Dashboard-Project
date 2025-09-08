@@ -238,7 +238,7 @@ const Navbar = () => {
                                 <span>Weather</span>
                             </Link>
                             <Link
-                                href="/calendar"
+                                href="/Calendar"
                                 className={`flex items-center gap-2 py-2 pl-6 rounded-lg transition-colors ${isLinkActive('/calendar') ? 'bg-blue-50 text-blue-600' : 'text-gray-600 hover:text-blue-600 hover:bg-gray-50'}`}
                             >
                                 <i className="ri-calendar-event-fill text-sm"></i>
