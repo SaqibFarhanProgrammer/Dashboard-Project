@@ -40,7 +40,7 @@ const Navbar = () => {
     };
 
     return (
-        <div className="Navbar_Parent bg-white p-6 w-64 border-r h-screen flex flex-col font-sans fixed left-0 top-0 overflow-y-auto z-50">
+        <div className="Navbar_Parent bg-white p-6 w-64 border-r border-[#adadad] h-screen flex flex-col font-sans fixed left-0 top-0 overflow-y-auto z-50">
             <div className="flex-grow">
                 <div className="NavWithLogo flex items-center gap-2 mb-8">
                     <Image
@@ -231,7 +231,7 @@ const Navbar = () => {
                             className={`overflow-hidden transition-all duration-300 ease-in-out ${openModules.details ? "max-h-60 opacity-100 mt-2" : "max-h-0 opacity-0"}`}
                         >
                             <Link
-                                href="/weather"
+                                href="/Weather"
                                 className={`flex items-center gap-2 py-2 pl-6 rounded-lg transition-colors ${isLinkActive('/weather') ? 'bg-blue-50 text-blue-600' : 'text-gray-600 hover:text-blue-600 hover:bg-gray-50'}`}
                             >
                                 <i className="ri-sun-fill text-sm"></i>
@@ -257,7 +257,7 @@ const Navbar = () => {
             </div>
 
             {/* Settings Module */}
-            <div className="NavWithSettingsModule mt-auto pt-4 border-t">
+            <div className="NavWithSettingsModule mt-auto pt-4 border-t border-[#949494]">
                 <button
                     onClick={() => toggleModule('settings')}
                     className="flex items-center gap-2 text-gray-800 hover:text-blue-600 w-full py-2 transition-colors"
